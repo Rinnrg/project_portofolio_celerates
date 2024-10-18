@@ -1,0 +1,87 @@
+/* src/App.css */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeIn 0.5s forwards; 
+}
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+
+.hero {
+    background-color: #f0f8ff;
+}
+
+.about {
+    background-color: #e6f7ff;
+}
+
+.experience {
+    background-color: #d9f7be;
+}
+
+.portfolio {
+    background-color: #fff1b8;
+}
+
+.contact {
+    background-color: #ffe7ba;
+}
+
+
+section:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transform: scale(1.02); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+a {
+    color: #007bff; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+
+button {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+
+@media (max-width: 768px) {
+    section {
+        margin: 10px; 
+        padding: 15px; 
+    }
+}
