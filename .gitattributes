@@ -26,3 +26,5 @@
 *.txt text
 # End of file
 *2.pack filter=lfs diff=lfs merge=lfs -text
+*4.pack filter=lfs diff=lfs merge=lfs -text
+*15.pack filter=lfs diff=lfs merge=lfs -text
